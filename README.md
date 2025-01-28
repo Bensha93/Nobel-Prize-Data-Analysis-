@@ -1,6 +1,8 @@
 
 # Nobel Prize Data Analysis (1901-2023)
 
+![Nobel_Prize](https://github.com/user-attachments/assets/a465a79b-b783-422b-89bf-3673a06db1b2)
+
 The Nobel Prize, one of the most prestigious international awards, has been recognizing extraordinary contributions in chemistry, literature, physics, physiology or medicine, economics, and peace since 1901. Along with the honor, prestige, and substantial prize money, each recipient receives a gold medal bearing the likeness of Alfred Nobel, the founder of the award.
 
 In this project, I analyze a comprehensive dataset provided by the Nobel Foundation, which includes information about every Nobel Prize winner from 1901 to 2023. Using Python for data exploration and analysis, I uncovered key trends and patterns in the data, answering several intriguing questions about the history of the prize and its recipients.
@@ -68,6 +70,9 @@ max_decade_usa = prop_usa_winners[prop_usa_winners['usa_born_winner'] == prop_us
 ax1 = sns.relplot(x='decade', y='usa_born_winner', data=prop_usa_winners, kind="line")
 ```
 
+![download (3)](https://github.com/user-attachments/assets/e89bd0d8-67e4-45f5-9238-a90933c48aae)
+
+
 ### Decade and Nobel Prize Category with the Highest Proportion of Female Laureates
 
 ```python
@@ -84,6 +89,9 @@ max_female_dict = {max_female_decade_category['decade'].values[0]: max_female_de
 # Optional: Plotting female winners with % winners on the y-axis
 ax2 = sns.relplot(x='decade', y='female_winner', hue='category', data=prop_female_winners, kind="line")
 ```
+
+![download (4)](https://github.com/user-attachments/assets/ad3b7f93-008c-4a5f-bb3b-573015ea037a)
+
 
 ### First Woman to Receive a Nobel Prize and Multiple-time Nobel Prize Winners
 
@@ -102,6 +110,8 @@ repeat_list = list(repeats)
 print("\n The repeat winners are :", repeat_list)
 ```
 
+
+
 **Result:**
 - The first woman to win a Nobel Prize was **Marie Curie, née Sklodowska**, in the category of **Physics**.
 - The repeat winners are:  
@@ -118,4 +128,3 @@ Through this analysis, we were able to uncover some fascinating trends in the hi
 This analysis provides valuable insights into the evolving trends of Nobel Prize winners over more than a century of awards.
 ```
 
-This format follows the typical structure of a GitHub README, with clear sections and code snippets for users to understand and replicate the analysis.
